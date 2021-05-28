@@ -1,6 +1,6 @@
-#include "stdafx.h"
+
 /* ***********************************************************************************************************
-* File Name   :	bms_sender.cpp
+* File Name   :	sender_app.cpp
 * Author      : Manoj Kumar Selvam
 * Description : sender_app.cpp is implementation of main.
 * Functions   :
