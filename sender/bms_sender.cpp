@@ -43,8 +43,6 @@ void BMS_Data_generator::pushToConsole(std::stringstream outputData)
 BMS_DATA BMS_Data_generator::pushToTest(std::stringstream TestData)
 {
 	BMS_DATA bms_params;
-	bms_params.SOC = 100;
-	bms_params.temperature = 85;
 	return bms_params;
 }
 
