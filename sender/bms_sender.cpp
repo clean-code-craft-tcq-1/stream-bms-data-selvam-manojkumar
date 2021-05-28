@@ -1,7 +1,7 @@
 /* ***********************************************************************************************************
 * File Name   :	bms_sender.cpp
 * Author      : Manoj Kumar Selvam
-* Description : BMS_sender.cpp is implements intefaces to send the BMS datas like temperature and State of Charging
+* Description : BMS_sender.cpp is implements intefaces to send the BMS datas like temperature and State of Charge
 * Functions	  :
 * *********************************************************************************************************** */
 #include<iostream>
