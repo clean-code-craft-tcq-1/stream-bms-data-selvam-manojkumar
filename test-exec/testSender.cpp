@@ -4,8 +4,8 @@
 #include<iostream>
 #include <stdlib.h>
 #include <sstream>
-#include "bms_sender.h"
-#include "test\catch.hpp"
+#include "../sender/bms_sender.h"
+#include "catch.hpp"
 
 
 TEST_CASE("validate input data") {
