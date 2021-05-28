@@ -14,9 +14,7 @@
 
 int main()
 {
-		class BMS_Data_generator * obj = new class BMS_Data_generator;
-		BMS_DATA testData;
-		testData = obj->pushToTest(obj->Output_JSON_Data());
+	class BMS_Data_generator * obj = new class BMS_Data_generator;
 	while (1)
 	{
 		obj->pushToConsole(obj->Output_JSON_Data());
