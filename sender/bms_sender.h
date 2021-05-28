@@ -11,11 +11,13 @@
 #define MIN_SOC     0.0
 #define MAX_SOC     100.0
 
+#define TEMP_JSON_INDEX 1
+#define SOC_JSON_INDEX 3
+
 typedef struct{
 	float temperature;
 	float SOC;
 }BMS_DATA;
-
 
 class BMS_Data_generator
 {
@@ -27,6 +29,7 @@ public:
 	std::stringstream Output_JSON_Data();
 	void pushToConsole(std::stringstream outputData);// print on console
 	BMS_DATA pushToTest(std::stringstream TestData);
+	bool Validate_Range(float current_value, int min_value, int max_value);
 };
 
 
