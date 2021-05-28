@@ -1,3 +1,4 @@
+#include "stdafx.h"
 /* ***********************************************************************************************************
 * File Name   :	bms_sender.cpp
 * Author      : Manoj Kumar Selvam
@@ -8,6 +9,12 @@
 #include <stdlib.h>
 #include <sstream>
 #include "bms_sender.h"
+
+
+bool BMS_Data_generator::Validate_Range(float current_value, int min_value, int max_value)
+{
+	return((current_value >= min_value) && (current_value <= max_value));
+}
 
 int BMS_Data_generator::randomGenerator(int min_value, int max_value)
 {
@@ -31,7 +38,7 @@ std::stringstream BMS_Data_generator::Output_JSON_Data()
 	bms_params.temperature = Generate_temperature();
 	bms_params.SOC = Generate_SOC();
 	std::stringstream outputData;
-	outputData << "{\"Temperature\": "<< bms_params.temperature << ", \"SOC\": " << bms_params.SOC <<"}";
+	outputData << "{\"Temperature\": "<< bms_params.temperature << " ,\"SOC\": " << bms_params.SOC <<" }";
 	return outputData;
 }
 
@@ -40,9 +47,16 @@ void BMS_Data_generator::pushToConsole(std::stringstream outputData)
 	std::cout << outputData.str() << std::endl;
 }
 
-BMS_DATA BMS_Data_generator::pushToTest(std::stringstream TestData)
+BMS_DATA BMS_Data_generator::pushToTest(std::stringstream testData)
 {
 	BMS_DATA bms_params;
+	std::string subString[5];
+	for(int iter=0; iter < 5; iter++)
+	{
+		testData >> subString[iter];
+	}
+	bms_params.temperature = std::stof(subString[TEMP_JSON_INDEX]);
+	bms_params.SOC = std::stof(subString[SOC_JSON_INDEX]);
 	return bms_params;
 }
 
