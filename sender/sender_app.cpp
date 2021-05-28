@@ -1,11 +1,15 @@
-// bms_sender.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
+/* ***********************************************************************************************************
+* File Name   :	bms_sender.cpp
+* Author      : Manoj Kumar Selvam
+* Description : sender_app.cpp is implementation of main.
+* Functions   :
+* *********************************************************************************************************** */
+
 #include<iostream>
 #include <stdlib.h>
 #include <sstream>
-#include <windows.h>
+#include <unistd.h>
 #include "bms_sender.h"
 
 int main()
