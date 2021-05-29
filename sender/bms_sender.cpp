@@ -17,7 +17,7 @@ bool BMS_Data_generator::Validate_Range(float current_value, int min_value, int 
 
 int BMS_Data_generator::randomGenerator(int min_value, int max_value)
 {
-	return (rand() % (min_value - max_value + 1)) + min_value;
+	return (rand() % (max_value - min_value + 1)) + min_value;
 }
 
 float BMS_Data_generator::Generate_temperature()
