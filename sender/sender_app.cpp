@@ -14,10 +14,10 @@
 
 int main()
 {
-	class BMS_Data_generator * obj = new class BMS_Data_generator;
+	class BMS_Data_generator * sender_obj = new class BMS_Data_generator;
 	while (1)
 	{
-		obj->pushToConsole(obj->Output_JSON_Data());
+		sender_obj->pushToConsole(sender_obj->Output_JSON_Data());
 		Sleep(500);
 	}
 	return 0;
