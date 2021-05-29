@@ -34,8 +34,12 @@ public:
 	int randomGenerator(int min_value, int max_value);
 	std::stringstream Output_JSON_Data();
 	void pushToConsole(std::stringstream outputData);// print on console
-	BMS_DATA pushToTest(std::stringstream TestData);
-	bool Validate_Range(float current_value, int min_value, int max_value);
 };
 
 
+class BMS_generator_tester : public BMS_Data_generator
+{
+public:
+	BMS_DATA pushToTest(std::stringstream TestData);
+	bool Validate_Range(float current_value, int min_value, int max_value);
+};
