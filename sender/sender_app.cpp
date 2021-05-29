@@ -18,7 +18,7 @@ int main()
 	while (1)
 	{
 		sender_obj->pushToConsole(sender_obj->Output_JSON_Data());
-		Sleep(500);
+		sleep(500);
 	}
 	return 0;
 }
