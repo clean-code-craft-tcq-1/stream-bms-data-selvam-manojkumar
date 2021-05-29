@@ -15,6 +15,8 @@ jobs:
 
     - name: build
       run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o senderexecutable ./sender/*.c*
+      
+    - name: build-test
       run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o testexec ./test-exec/*.c*
       
     - name: run
