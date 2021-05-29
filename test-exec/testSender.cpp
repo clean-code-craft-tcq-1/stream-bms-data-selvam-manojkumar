@@ -6,7 +6,7 @@
 
 TEST_CASE("data generation test") {
 
-	class BMS_generator_tester * tester_obj = new BMS_generator_tester;
+	BMS_generator_tester * tester_obj = new BMS_generator_tester;
 	BMS_DATA testData;
 	for (int noOfIter = 0; noOfIter < 50; noOfIter++) 
 	{
