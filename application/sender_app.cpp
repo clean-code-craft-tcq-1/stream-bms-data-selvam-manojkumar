@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <sstream>
 #include <unistd.h>
-#include "bms_sender.h"
+#include "../sender/bms_sender.h"
 
 int main()
 {
