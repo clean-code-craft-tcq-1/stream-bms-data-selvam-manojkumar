@@ -1,8 +1,8 @@
 #include<iostream>
 #include <stdlib.h>
 #include <sstream>
-#include "../sender/bms_sender.h"
-#include "catch.hpp"
+#include "sender/bms_sender.h"
+#include "test-exec/catch.hpp"
 
 TEST_CASE("data generation test") {
 
