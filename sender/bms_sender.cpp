@@ -22,7 +22,6 @@ int BMS_Data_generator::randomGenerator(int min_value, int max_value)
 
 float BMS_Data_generator::Generate_temperature()
 {
-
 	return randomGenerator(MIN_TEMP, MAX_TEMP);;
 }
 
