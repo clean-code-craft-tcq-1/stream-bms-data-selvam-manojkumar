@@ -15,7 +15,7 @@
 int main()
 {
 	class BMS_Data_generator * sender_obj = new class BMS_Data_generator;
-	while (1)
+	for(int count =0;count<100;count++)
 	{
 		sender_obj->pushToConsole(sender_obj->Output_JSON_Data());
 		sleep(500);
