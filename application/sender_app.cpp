@@ -15,7 +15,7 @@
 int main()
 {
 	class BMS_Data_generator * sender_obj = new class BMS_Data_generator;
-	while(1)
+	for(int i=0;i<20;i++)#added for Integration 
 	{
 		sender_obj->pushToConsole(sender_obj->Output_JSON_Data());
 		sleep(500);
