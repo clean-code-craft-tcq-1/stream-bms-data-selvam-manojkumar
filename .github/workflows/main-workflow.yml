@@ -1,4 +1,4 @@
-name: Build and Run
+name: Sender::Build and Run
 
 on: [push, pull_request]
 
